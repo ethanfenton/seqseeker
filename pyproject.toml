@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "seqseeker"
-version = "0.1.0"
+version = "0.1.1"
 description = "Fast k-mer–based detection of any target sequence in paired single-cell FASTQ files"
 readme = "README.md"
 license = { text = "MIT" }
