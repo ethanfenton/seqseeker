@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.ruff_cache/
+*.so
+src/seqseeker/_c_src/kmer_search
+src/seqseeker/_c_src/kmer_search.exe
+seqseeker_output/

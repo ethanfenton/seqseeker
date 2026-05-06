@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# seqseeker — bash wrapper for the seqseeker Python CLI
+#
+# Installation:
+#   chmod +x seqseeker && sudo cp seqseeker /usr/local/bin/
+#   -- or --
+#   pip install seqseeker   (installs the `seqseeker` entry point automatically)
+#
+# Usage:
+#   seqseeker search --sequence-name egfp --input /path/to/fastq/ --output ./results
+#   seqseeker search --sequence-file mygene.fasta --input /path/to/fastq/
+#   seqseeker list-sequences
+#   seqseeker compile
+
+set -euo pipefail
+
+PYTHON="${SEQSEEKER_PYTHON:-python3}"
+
+# Check that the Python package is importable
+if ! "$PYTHON" -c "import seqseeker" 2>/dev/null; then
+  echo "ERROR: seqseeker Python package not found." >&2
+  echo "Install with:  pip install seqseeker" >&2
+  exit 1
+fi
+
+exec "$PYTHON" -m seqseeker "$@"
