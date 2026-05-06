@@ -5,7 +5,7 @@
 `seqseeker` finds reads containing a user-specified nucleotide sequence (GFP,
 mCherry, Cre, any transgene) directly in raw gzipped FASTQ files from 10x
 Chromium experiments, attributes each hit to a cell barcode + UMI, and writes
-output tables ready for Seurat.
+output tables ready for incorporation with downstream analysis e.g. Scanpy/Seurat.
 
 No custom genome build. No Cell Ranger re-run. Per-sample runtimes of
 **5–15 minutes** vs. hours for alignment.
