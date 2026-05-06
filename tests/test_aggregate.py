@@ -2,7 +2,6 @@
 
 import csv
 from pathlib import Path
-import pytest
 from seqseeker._aggregate import aggregate_results
 
 

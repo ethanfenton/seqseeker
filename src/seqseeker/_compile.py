@@ -1,6 +1,5 @@
 """Compile the kmer_search C binary, caching next to the source file."""
 
-import os
 import shutil
 import subprocess
 import sys

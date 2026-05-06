@@ -1,8 +1,6 @@
 """Tests that the C binary compiles cleanly."""
 
 import subprocess
-from pathlib import Path
-import pytest
 from seqseeker._compile import get_binary, _C_SRC
 
 

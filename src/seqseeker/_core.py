@@ -10,7 +10,6 @@ from pathlib import Path
 
 from ._aggregate import aggregate_results
 from ._compile import get_binary
-from ._sequences import get_sequence, BUILTIN_SEQUENCES
 
 
 def _find_fastq_pairs(
@@ -188,7 +187,7 @@ def search(
         n_workers = workers
 
     print("=" * 70, flush=True)
-    print(f"  seqseeker", flush=True)
+    print("  seqseeker", flush=True)
     print(f"  Started   : {datetime.now()}", flush=True)
     print(f"  CPUs      : {n_cpu}   workers: {n_workers}", flush=True)
     print(f"  Pairs     : {len(pairs)} across "
@@ -232,7 +231,7 @@ def search(
 
     elapsed = time.time() - t0
 
-    print(f"\n[seqseeker] Aggregating results ...", flush=True)
+    print("\n[seqseeker] Aggregating results ...", flush=True)
     total_hits, n_cells = aggregate_results(csv_paths, out_dir)
 
     print("=" * 70, flush=True)
