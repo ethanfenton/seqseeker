@@ -31,9 +31,9 @@ requires-python = ">=3.10"
 dependencies = []   # zero runtime dependencies — pure stdlib + compiled C
 
 [project.urls]
-Homepage    = "https://github.com/ethanfenton27/seqseeker"
-Repository  = "https://github.com/ethanfenton27/seqseeker"
-"Bug Tracker" = "https://github.com/ethanfenton27/seqseeker/issues"
+Homepage    = "https://github.com/ethanfenton/seqseeker"
+Repository  = "https://github.com/ethanfenton/seqseeker"
+"Bug Tracker" = "https://github.com/ethanfenton/seqseeker/issues"
 
 [project.scripts]
 seqseeker = "seqseeker._cli:main"

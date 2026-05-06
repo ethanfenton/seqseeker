@@ -10,7 +10,7 @@ output tables ready for Seurat.
 No custom genome build. No Cell Ranger re-run. Per-sample runtimes of
 **5–15 minutes** vs. hours for alignment.
 
-[![CI](https://github.com/ethanfenton27/seqseeker/actions/workflows/ci.yml/badge.svg)](https://github.com/ethanfenton27/seqseeker/actions)
+[![CI](https://github.com/ethanfenton/seqseeker/actions/workflows/ci.yml/badge.svg)](https://github.com/ethanfenton/seqseeker/actions)
 [![PyPI](https://img.shields.io/pypi/v/seqseeker.svg)](https://pypi.org/project/seqseeker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -70,7 +70,7 @@ pip install seqseeker
 # Requires the Python package to be installed first (above).
 # Install from GitHub:
 if (!requireNamespace("remotes")) install.packages("remotes")
-remotes::install_github("ethanfenton27/seqseeker", subdir = "R/seqseeker")
+remotes::install_github("ethanfenton/seqseeker", subdir = "R/seqseeker")
 ```
 
 ---
@@ -357,7 +357,7 @@ a flat distribution suggests unspecific noise.
 If you use `seqseeker` in published work, please cite:
 
 > Fenton E (2026). *seqseeker: fast k-mer detection of target sequences in
-> single-cell FASTQ files.* GitHub: https://github.com/ethanfenton27/seqseeker
+> single-cell FASTQ files.* GitHub: https://github.com/ethanfenton/seqseeker
 
 ---
 

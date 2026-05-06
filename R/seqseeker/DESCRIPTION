@@ -20,5 +20,5 @@ Imports:
 Suggests:
     Seurat,
     testthat (>= 3.0.0)
-URL: https://github.com/ethanfenton27/seqseeker
-BugReports: https://github.com/ethanfenton27/seqseeker/issues
+URL: https://github.com/ethanfenton/seqseeker
+BugReports: https://github.com/ethanfenton/seqseeker/issues
