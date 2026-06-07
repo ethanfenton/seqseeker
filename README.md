@@ -64,6 +64,31 @@ sudo yum install gcc zlib-devel                    # RHEL/CentOS
 pip install seqseeker
 ```
 
+### Docker
+
+No compiler or Python environment needed — the C binary is pre-compiled inside
+the image. Mount your FASTQ directory and run:
+
+```bash
+docker pull ghcr.io/ethanfenton/seqseeker:latest
+
+docker run --rm \
+  -v /path/to/your/fastqs:/data \
+  ghcr.io/ethanfenton/seqseeker:latest \
+  search \
+  --sequence-name egfp \
+  --input  /data/novogene/01.RawData \
+  --output /data/results/gfp
+
+# All sub-commands and flags work identically to the CLI
+docker run --rm ghcr.io/ethanfenton/seqseeker:latest --help
+```
+
+The `-v /host/path:/data` flag makes your local files visible inside the
+container at `/data/`.  All `--input` and `--output` paths must be under
+`/data/`.  Versioned images are available as
+`ghcr.io/ethanfenton/seqseeker:0.1.2`, etc.
+
 ### R package
 
 ```r
